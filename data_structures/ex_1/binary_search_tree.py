@@ -22,7 +22,6 @@ class BinarySearchTree:
             if node.right:
                 queue.append(node.right)
             cb(node.value)
-            
   def insert(self, value):
     new_tree = BinarySearchTree(value)
     if (value < self.value):
